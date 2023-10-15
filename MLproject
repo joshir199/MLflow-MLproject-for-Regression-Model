@@ -5,6 +5,6 @@ conda_env: conda.yaml
 entry_points:
   main:
     parameters:
-      data_file: path
       n_estimator: {type: int, default: 45}
+      data_file: path
     command: "python train.py -r {n_estimator} {data_file}"
