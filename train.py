@@ -47,9 +47,9 @@ if __name__ == '__main__':
     np.random.seed(default_seed)
 
     n_estimator = int(sys.argv[1]) if len(sys.argv) > 1 else 50
-    path = str(sys.argv[2]) if len(sys.argv) > 2 else default_path
+    #path = str(sys.argv[2]) if len(sys.argv) > 2 else default_path
 
-    data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), path)
+    data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), default_path)
 
     train_x, train_y, test_x, test_y = get_preprocessed_data(data_path)
 
