@@ -1,0 +1,10 @@
+name: Bike Ride Sharing Regression Model
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_file: path
+      n_estimator: {type: int, default: 45}
+    command: "python train.py -r {n_estimator} {data_file}"
